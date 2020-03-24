@@ -297,7 +297,7 @@
 
 <nav>
   <div class="nav-wrapper teal">
-    <a href="#" class="brand-logo center">POKEDEX</a>
+    <a (click)="goMain()" class="brand-logo center" style="cursor: pointer">POKEDEX</a>
     <a *ngIf="getAuthService().isLoggedIn" title="Déconnexion" [href]="logout()" style="margin-left: 95%; margin-right: 10px"><i class="fas fa-sign-out-alt"></i></a>
   </div>
 </nav>
